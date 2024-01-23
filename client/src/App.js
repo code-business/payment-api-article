@@ -9,7 +9,7 @@ import {
 import { loadStripe } from "@stripe/stripe-js";
 import axios from "axios";
 
-const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_SECRET_KEY);
+const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY);
 
 const MyCheckoutForm = () => {
   const stripe = useStripe();
